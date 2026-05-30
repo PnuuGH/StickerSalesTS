@@ -1,0 +1,12 @@
+data/*.csv
+
+# Model files
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+src/__pycache__/
+
+# OS
+.DS_Store
