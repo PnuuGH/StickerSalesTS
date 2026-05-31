@@ -75,6 +75,11 @@ Playground Series S5E1 and place in data/ folder"
     - python src/train.py
     - uvicorn src.predict:app --reload
     - Open http://localhost:8000/docs
+    - Input format is {"date": "YEAR-MONTH-DATE", "country": "string", "store": "string", "product": "string"}
+    *The category available for country, store and product are ("Canada", "Finland", "Italy", "Kenya", "Norway", "Singapore")
+                                                               ("Discount Stickers", "Stickers for Less", "Premium Sticker Mart")
+                                                               ("Holographic Goose", "Kaggle", "Kaggle Tiers", "Kerneler", "Kerneler Dark Mode")
+      
 
 11. What I learnt from this project
     - Using lag feature does not work for long timeframe prediction since not only we do not have historical data, but also were we to use recursive prediction or direct prediction for lag, it'd cause compound error that could mess the whole thing up.
