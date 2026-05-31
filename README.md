@@ -75,7 +75,7 @@ Playground Series S5E1 and place in data/ folder"
     - python src/train.py
     - uvicorn src.predict:app --reload
     - Open http://localhost:8000/docs
-    - Input format is {"date": "YEAR-MONTH-DATE", "country": "string", "store": "string", "product": "string"}
+    - Input format is {"date": "YYYY-MM-DD", "country": "string", "store": "string", "product": "string"}
     *The category available for country, store and product are ("Canada", "Finland", "Italy", "Kenya", "Norway", "Singapore")
                                                                ("Discount Stickers", "Stickers for Less", "Premium Sticker Mart")
                                                                ("Holographic Goose", "Kaggle", "Kaggle Tiers", "Kerneler", "Kerneler Dark Mode")
